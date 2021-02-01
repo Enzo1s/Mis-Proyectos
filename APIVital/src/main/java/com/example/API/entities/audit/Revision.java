@@ -9,7 +9,8 @@ import org.hibernate.envers.RevisionTimestamp;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.sql.Date;
+import java.util.Date;
+
 
 @Entity
 @Table(name = "REVISION_INFO")

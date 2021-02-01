@@ -7,7 +7,7 @@ import java.util.Map;
 
 public interface ProductoService extends BaseService<Producto, Long> {
 
-    List<Producto> search(String iltro) throws Exception;
+    List<Producto> search(String filtro) throws Exception;
     public Map<String, Object> search(String filter, int page, int size, String sortBy, String direction) throws Exception;
 
 }

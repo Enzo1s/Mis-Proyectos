@@ -37,10 +37,10 @@ public abstract class BaseControllerImpl<E extends Base, S extends BaseServiceIm
         }
     }
 
-    @GetMapping("/{id")
+    @GetMapping("/{id}")
     public  ResponseEntity<?> getOne(@PathVariable Long id) {
         try {
-            return ResponseEntity.status(HttpStatus.OK).body(servicio.findByID()id));
+            return ResponseEntity.status(HttpStatus.OK).body(servicio.findById(id));
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("{\"error\":\"Error. Por favor intente más tarde.\"}");
         }
@@ -56,7 +56,7 @@ public abstract class BaseControllerImpl<E extends Base, S extends BaseServiceIm
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<?> update(@PathVariable long id, @RequestBody E entity) {
+    public ResponseEntity<?> update(@PathVariable Long id, @RequestBody E entity) {
         try {
             return ResponseEntity.status(HttpStatus.OK).body(servicio.update(id, entity));
         } catch (Exception e) {
@@ -64,7 +64,7 @@ public abstract class BaseControllerImpl<E extends Base, S extends BaseServiceIm
         }
     }
 
-    @DeleteMapping("/{id")
+    @DeleteMapping("/{id}")
     public ResponseEntity<?> delete (@PathVariable Long id) {
         try {
             return ResponseEntity.status(HttpStatus.NO_CONTENT).body(servicio.delete(id));

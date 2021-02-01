@@ -1,6 +1,5 @@
 package com.example.API.entities;
 
-import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,7 +20,6 @@ import javax.persistence.Table;
 public class Producto extends Base {
 
     @Column(name = "nombre")
-    @NotNull
     private String nombre;
 
     @Column(name = "rubro")
@@ -38,4 +36,7 @@ public class Producto extends Base {
 
     @Column(name = "stock")
     private float stock;
+
+    @Column(name = "pathImg")
+    private String pathImg;
 }

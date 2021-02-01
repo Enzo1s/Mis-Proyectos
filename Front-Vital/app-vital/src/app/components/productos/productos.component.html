@@ -1,0 +1,53 @@
+<h1>Productos</h1>
+<h2>Semillas</h2>
+<div class="card-deck">
+  <div class="card" *ngFor="let productoAux of productoArr; let i = index" style="max-width:25%; padding: 10px;">
+    <img src="../asset/img/{{productoAux.imagenPath}}" alt="" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">{{productoAux.nombre}}</h5>
+      <p class="card-text">$ {{productoAux.precio}}</p>
+    </div>
+    <div class="card-footer" style="text-align: center;">
+      <a href="" class="btn btn-primary" style="width: 90%;">Detalle</a>
+    </div>
+  </div>
+</div>
+<h2>Cereales</h2>
+<div class="card-deck">
+  <div class="card" *ngFor="let productoAux of productoArr; let i = index" style="max-width:25%; padding: 10px;">
+    <img src="../asset/img/{{productoAux.imagenPath}}" alt="" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">{{productoAux.nombre}}</h5>
+      <p class="card-text">$ {{productoAux.precio}}</p>
+    </div>
+    <div class="card-footer" style="text-align: center;">
+      <a href="" class="btn btn-primary" style="width: 90%;">Detalle</a>
+    </div>
+  </div>
+</div>
+<h2>Sin TACC</h2>
+<div class="card-deck">
+  <div class="card" *ngFor="let productoAux of productoArr; let i = index" style="max-width:25%; padding: 10px;">
+    <img src="../asset/img/{{productoAux.imagenPath}}" alt="" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">{{productoAux.nombre}}</h5>
+      <p class="card-text">$ {{productoAux.precio}}</p>
+    </div>
+    <div class="card-footer" style="text-align: center;">
+      <a href="" class="btn btn-primary" style="width: 90%;">Detalle</a>
+    </div>
+  </div>
+</div>
+<h2>Bebidas</h2>
+<div class="card-deck">
+  <div class="card" *ngFor="let productoAux of productoArr; let i = index" style="max-width:25%; padding: 10px;">
+    <img src="../asset/img/{{productoAux.imagenPath}}" alt="" class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">{{productoAux.nombre}}</h5>
+      <p class="card-text">$ {{productoAux.precio}}</p>
+    </div>
+    <div class="card-footer" style="text-align: center;">
+      <a href="" class="btn btn-primary" style="width: 90%;">Detalle</a>
+    </div>
+  </div>
+</div>
