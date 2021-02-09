@@ -104,7 +104,7 @@
 					<appName>API-Vital</appName>
 					<processTypes>
 						<web>java $JAVA_OPTS -cp target/classes:target/dependency/*
-						Main</web>
+						ApiVitalApplication</web>
 					</processTypes>
 				</configuration>
 			</plugin>
