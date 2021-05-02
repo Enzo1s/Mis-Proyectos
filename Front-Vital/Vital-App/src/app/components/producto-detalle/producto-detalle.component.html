@@ -1,0 +1,23 @@
+<!-- <div *ngIf="producto">-->
+<h2>{{producto.nombre | uppercase}}</h2>
+<!--<div><span>id: </span> {{producto.id}}</div>
+  <button class="btn btn-secondary btn-sm" routerLink="/productos">Volver</button>
+</div> -->
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img [src]="baseEndpoint + '/uploads/img/' + producto.id + '?fotoHashCode=' + producto.fotoHashCode">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{producto.nombre | uppercase}}</h5>
+        <p class="card-text">{{producto.descripcion}}.
+          <br>{{producto.tipo}}
+        </p>
+        <p class="card-text text-danger">${{producto.precio}}</p>
+        <button class="btn btn-secondary btn-sm" [routerLink]="['/producto-form', producto.id]">editar</button>
+        <button class="btn btn-secondary btn-sm" routerLink="/productos">Volver</button>
+      </div>
+    </div>
+  </div>
+</div>

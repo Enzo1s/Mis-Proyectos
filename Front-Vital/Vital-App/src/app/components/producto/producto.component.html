@@ -1,0 +1,32 @@
+<div class="container center">
+  <h3>Productos</h3>
+  <button class="btn btn-primary my-2" routerLink="/producto-form">Crear</button>
+  <div class="alert alert-info" *ngIf="productos?.length==0">
+    No hay productos en el sistema
+  </div>
+  <table class="table table-hover table-striped" *ngIf="productos?.length>0">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let producto of productos">
+        <td>{{producto.id}}</td>
+        <td>{{producto.nombre}}</td>
+        <td>{{producto.precio}}</td>
+        <td>{{producto.tipo}}</td>
+
+        <td><button class="btn btn-secondary btn-sm" [routerLink]="['/detalle', producto.id]">Detalle</button>
+        </td>
+        <td><button class="btn btn-secondary btn-sm" [routerLink]="['/producto-form', producto.id]">Editar</button>
+        </td>
+        <td><button class="btn btn-danger btn-sm" (click)="eliminar(producto)">Eliminar</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

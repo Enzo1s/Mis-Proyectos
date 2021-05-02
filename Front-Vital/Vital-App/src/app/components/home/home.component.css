@@ -1,0 +1,41 @@
+h1 {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-size: 64px;
+  font-weight: bold;
+}
+.sub-title {
+  text-align: center;
+  font-family: "Amatic SC", cursive;
+}
+/* .background-home {
+  background-color: rgba(247, 241, 241, 0.699);
+} */
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(33, 153, 8, 0.973);
+  /* text-decoration: none; */
+}
+
+a:visited {
+  /* text-decoration: none; */
+  color: black;
+}
+
+.sub-menu {
+  display: flex;
+  flex-wrap: wrap;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: space-around;
+}
+
+.font {
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+}
